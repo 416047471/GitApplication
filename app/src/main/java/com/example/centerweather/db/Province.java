@@ -1,6 +1,9 @@
 package com.example.centerweather.db;
 
-public class Province{
+import org.litepal.crud.LitePalSupport;
+import org.litepal.exceptions.DataSupportException;
+
+public class Province extends LitePalSupport {
     private int id;
     private String provinceName;//省的名字
     private int provinceCode;//省的代号

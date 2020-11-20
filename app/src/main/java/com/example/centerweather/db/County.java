@@ -1,10 +1,12 @@
 package com.example.centerweather.db;
 
-public class County {
+import org.litepal.crud.LitePalSupport;
+
+public class County extends LitePalSupport {
     private int id;
     private String countyName;//县的名字
     private String weatherId;//县对应的天气id
-    private int cityID;//当前县所属市的ID值
+    private int cityId;//当前县所属市的ID值
 
     public int getId() {
         return id;
@@ -30,11 +32,11 @@ public class County {
         this.weatherId = weatherId;
     }
 
-    public int getCityID() {
-        return cityID;
+    public int getCityId() {
+        return cityId;
     }
 
-    public void setCityID(int cityID) {
-        this.cityID = cityID;
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 }
