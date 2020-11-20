@@ -113,7 +113,7 @@ public class ChooseAreaFragment extends Fragment {
             currentLevel = LEVEL_PROVINCE;
         }else {
             String address = "http://guolin.tech/api/china";
-
+            queryFormServer(address,"province");
         }
     }
     /*查询全国所有的市，优先级从数据库查询，如果没有查询到再去服务器上查询*/
