@@ -51,7 +51,7 @@ public class WeatherActivity extends AppCompatActivity {
     private ImageView bingPicImg;
     public SwipeRefreshLayout swipeRefresh;
     public DrawerLayout drawerLayout;
-    private Button navButton;
+    private TextView navButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
